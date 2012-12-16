@@ -1,8 +1,37 @@
 #!/usr/bin/env bash
 
 log() {
-  echo -e "$@"
+  echo -e "$@" >&2
 }
+
+error_exit() {
+  echo "Error: $1"
+  exit 1
+}
+
+require() {
+  which $1 > /dev/null || error_exit "$0 requires $1"
+}
+
+help() {
+  log "Usage:
+
+  SYNOPSIS
+
+    OpenSource is a tiny shell script that allows you to add the type of license
+    you wish to add to your project.
+
+  DESCRIPTION
+
+    -l, --license
+        Mention the type of license you want to add to your project.
+  "
+}
+
+if test $1 = "-h"; then
+  help
+  exit 0
+fi
 
 log "(The MIT License)
 

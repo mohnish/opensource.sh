@@ -37,7 +37,7 @@ help() {
 
   USAGE
 
-    opensource.sh [options] [/path/to/project/]
+    opensource [options] [/path/to/project/]
 
   DESCRIPTION
 
@@ -51,7 +51,7 @@ help() {
 
     -l, --license
         Mention the type of license you want to add to your project.
-        usage: opensource.sh -l mit
+        usage: opensource -l mit
   "
 }
 
@@ -70,6 +70,6 @@ elif test "$#" -eq 3 -a "$1" = "-l" -a "$2" = "mit"; then
   create_license "$MIT" "$3"
   exit 0
 else
-  echo "Please refer help for usage instructions. opensource.sh -h or opensource.sh --help"
+  echo "Please refer help for usage instructions. opensource -h or opensource --help"
   exit 0
 fi

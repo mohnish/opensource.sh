@@ -1,4 +1,3 @@
 ## OpenSource
 
-OpenSource is a shell script that allows you to simply add a license to your
-project.
+OpenSource is a tiny shell script that allows you to add the type of license you wish to add to your project.

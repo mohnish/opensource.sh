@@ -2,6 +2,7 @@
 
 YEAR=`date +%Y`
 source ./config/*
+# Conditionalize this later to load only the license we need
 source ./licenses/*
 
 

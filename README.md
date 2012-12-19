@@ -3,10 +3,13 @@
 OpenSource is a tiny shell script that allows you to add the license you wish to add to your project.
 
 ### Installation
-
 - First `cd ~`
 - Next `git clone git@github.com:mohnish/opensource.git`
 - Then `cd opensource/` and `chmod 755 opensource`.
+
+### Setup
+- Setup your information in the config/user.rc file.
+- Set `USER="YourName"` and `EMAIL="YourEmail"`, each in it's own line.
 
 ### Usage
 - `cd ~/opensource/` and `opensource [options] /path/to/project`

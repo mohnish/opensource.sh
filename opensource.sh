@@ -13,7 +13,7 @@ log() {
 
 # Create license file
 create_license() {
-  echo ""
+  echo "$@" > LICENSE
 }
 
 
@@ -56,6 +56,7 @@ if test "$1" = "-h" -o "$1" = "--help"; then
   exit 0
 elif test "$#" -eq 2 -a "$1" = "-l" -a "$2" = "mit"; then
   log "$MIT"
+  create_license "$MIT"
   exit 0
 else
   echo "Sorry, I have no idea what you are talking about!"

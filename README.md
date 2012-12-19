@@ -17,7 +17,7 @@ OpenSource is a tiny shell script that allows you to add the license you wish to
 It can be used as: `opensource -h` or `opensource --help`.
 
 ### Sample
-Here is a sample of how the generated license file looks like: [LICENSE](https://github.com/mohnish/opensource/blob/master/LICENSE)
+Here is a sample generated license file: [LICENSE](https://github.com/mohnish/opensource/blob/master/LICENSE)
 
 ### TODO
 - Add support to multiple opensource licenses

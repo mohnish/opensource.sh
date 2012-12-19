@@ -1,17 +1,16 @@
 #!/usr/bin/env bash
 
-. ~/.opensource.rc
+YEAR=`date +%Y`
+. ./config/*
 . ./licenses/*
 
-YEAR=`date +%Y`
 
 # Displays the given input
 log() {
   echo -e "$@" >&2
-  # printf "%s" "$MIT"
 }
 
-# Create license
+# Create license file
 create_license() {
   echo ""
 }

@@ -43,7 +43,7 @@ help() {
 
     -l, --license
         Mention the type of license you want to add to your project.
-        Ex: opensource.sh -l mit
+        usage: opensource.sh -l mit
   "
 }
 

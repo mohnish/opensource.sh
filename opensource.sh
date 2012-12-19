@@ -27,9 +27,9 @@ require() {
 }
 
 help() {
-  log "Usage:
+  log "Help:
 
-  SYNOPSIS
+  Usage
 
     opensource.sh [options] [/path/to/project/]
 

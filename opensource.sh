@@ -2,9 +2,6 @@
 
 YEAR=`date +%Y`
 source ./config/*
-# Conditionalize this later to load only the license we need
-source ./licenses/*
-
 
 # Displays the given input
 log() {
@@ -55,6 +52,7 @@ if test "$1" = "-h" -o "$1" = "--help"; then
   help
   exit 0
 elif test "$#" -eq 2 -a "$1" = "-l" -a "$2" = "mit"; then
+  source ./licenses/mit.sh
   log "$MIT"
   create_license "$MIT"
   exit 0

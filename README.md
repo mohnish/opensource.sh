@@ -6,12 +6,12 @@ OpenSource is a tiny shell script that allows you to add the license you wish to
 
 - First `cd ~`
 - Next `git clone git@github.com:mohnish/opensource.git`
-- Then `cd ~/opensource/` and `chmod 755 opensource.sh`.
+- Then `cd opensource/` and `chmod 755 opensource`.
 
 ### Usage
-- `cd ~/opensource/` and `opensource.sh [options] /path/to/project`
-- For a list of options available with `opensource.sh`, you can use the `-h` flag.
-It can be used as: `opensource.sh -h` or `opensource.sh --help`.
+- `cd ~/opensource/` and `opensource [options] /path/to/project`
+- For a list of options available with `opensource`, you can use the `-h` flag.
+It can be used as: `opensource -h` or `opensource --help`.
 
 
 ### TODO

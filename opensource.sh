@@ -31,7 +31,7 @@ help() {
 
   SYNOPSIS
 
-    /path/to/opensource.sh [options] [/path/to/project/]
+    opensource.sh [options] [/path/to/project/]
 
   DESCRIPTION
 

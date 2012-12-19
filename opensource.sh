@@ -10,7 +10,15 @@ log() {
 
 # Create license file
 create_license() {
-  echo "$@" > LICENSE
+  local license=$1
+  local path=$2
+  if test $# -eq 2; then
+    echo "$license" > $path/LICENSE
+  elif test $# -eq 1; then
+    echo "$license" > LICENSE
+  else
+    echo "Please refer opensource -h for the right usage."
+  fi
 }
 
 
@@ -55,6 +63,11 @@ elif test "$#" -eq 2 -a "$1" = "-l" -a "$2" = "mit"; then
   source ./licenses/mit.sh
   log "$MIT"
   create_license "$MIT"
+  exit 0
+elif test "$#" -eq 3 -a "$1" = "-l" -a "$2" = "mit"; then
+  source ./licenses/mit.sh
+  log "$MIT"
+  create_license "$MIT" "$3"
   exit 0
 else
   echo "Please refer help for usage instructions. opensource.sh -h or opensource.sh --help"

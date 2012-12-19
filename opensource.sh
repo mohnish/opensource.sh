@@ -10,7 +10,7 @@ log() {
 
 # Create license file
 create_license() {
-  echo "$@" > LICENSE
+  echo "$@" > LICENSE.md
 }
 
 

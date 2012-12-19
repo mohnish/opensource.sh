@@ -17,7 +17,7 @@ It can be used as: `opensource.sh -h` or `opensource.sh --help`.
 ### TODO
 
 - Add support to multiple opensource licenses
-- Add support to mulptiple file formats such as markdown, text etc.
+- Add support to mulptiple file formats such as text, raw etc.
 
 I happen to be new to shell scripting, so please do pardon my poor coding style & quality. I would love to have people push updates to this repository to fix/improve the existing code. Thanks in advance. Suggestions for betterment of the project are welcome.
 

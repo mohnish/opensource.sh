@@ -19,6 +19,6 @@ It can be used as: `opensource.sh -h` or `opensource.sh --help`.
 - Add support to multiple opensource licenses
 - Make the script more robust
 
-I happen to be new to shell scripting, so please do pardon my poor coding style & quality. I would love to have people push updates to this repository to fix/improve the existing. Thanks in advance. Suggestions for betterment of the project are welcome.
+I happen to be new to shell scripting, so please do pardon my poor coding style & quality. I would love to have people push updates to this repository to fix/improve the existing code. Thanks in advance. Suggestions for betterment of the project are welcome.
 
 Lots of [<3](http://twitter.com/arrowgunz)

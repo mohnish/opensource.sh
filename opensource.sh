@@ -57,6 +57,6 @@ elif test "$#" -eq 2 -a "$1" = "-l" -a "$2" = "mit"; then
   create_license "$MIT"
   exit 0
 else
-  echo "Sorry, I have no idea what you are talking about!"
+  echo "Please refer help for usage instructions. opensource.sh -h or opensource.sh --help"
   exit 0
 fi

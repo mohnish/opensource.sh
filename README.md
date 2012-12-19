@@ -4,8 +4,8 @@ OpenSource is a tiny shell script that allows you to add the type of license you
 
 ### Installation
 
-- Download the zip file and copy it to the home directory `~`. It should look
-something like `~/opensource/`.
+- First `cd ~`
+- Next `git clone git@github.com:mohnish/opensource.git`
 - Then `cd ~/opensource/` and `chmod 755 opensource.sh`.
 
 ### Usage

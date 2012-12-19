@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 YEAR=`date +%Y`
-. ./config/*
-. ./licenses/*
+source ./config/*
+source ./licenses/*
 
 
 # Displays the given input

@@ -12,7 +12,8 @@ OpenSource is a tiny shell script that allows you to add the license you wish to
 - Set `USER="YourName"` and `EMAIL="YourEmail"`, each in it's own line.
 
 ### Usage
-- `cd ~/opensource/` and `opensource [options] /path/to/project`
+- `~/opensource/opensource [options] /path/to/project`.
+- `opensource` also supports relative paths like `.` or `path/../../../to/project`.
 - For a list of options available with `opensource`, you can use the `-h` flag.
 It can be used as: `opensource -h` or `opensource --help`.
 

@@ -1,7 +1,10 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 YEAR=`date +%Y`
-source ./config/*
+opensource_dir=`dirname $0`
+config_dir=$opensource_dir/config/
+licenses_dir=$opensource_dir/licenses/
+source $config_dir/*
 
 # Displays the given input
 log() {
@@ -11,7 +14,7 @@ log() {
 # Create license file
 create_license() {
   local license=$1
-  local path=$2
+  local path=`cd $2; pwd`
   if test $# -eq 2; then
     echo "$license" > $path/LICENSE
   elif test $# -eq 1; then
@@ -60,12 +63,12 @@ if test "$1" = "-h" -o "$1" = "--help"; then
   help
   exit 0
 elif test "$#" -eq 2 -a "$1" = "-l" -a "$2" = "mit"; then
-  source ./licenses/mit.sh
+  source $licenses_dir/mit.sh
   log "$MIT"
   create_license "$MIT"
   exit 0
 elif test "$#" -eq 3 -a "$1" = "-l" -a "$2" = "mit"; then
-  source ./licenses/mit.sh
+  source $licenses_dir/mit.sh
   log "$MIT"
   create_license "$MIT" "$3"
   exit 0

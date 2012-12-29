@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env sh
 
 YEAR=`date +%Y`
 opensource_dir=`dirname $0`

@@ -58,6 +58,10 @@ help() {
   "
 }
 
+# TODO: Add a safety filter for `YEAR` and `EMAIL` variables
+# If `EMAIL` is not set, then the angular brackets should not be
+# displayed.
+
 # Flags
 if test "$1" = "-h" -o "$1" = "--help"; then
   help

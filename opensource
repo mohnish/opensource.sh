@@ -8,7 +8,7 @@ source $config_dir/*
 
 # Displays the given input
 log() {
-  echo -e "$@" >&2
+  echo "$@" >&2
 }
 
 # Create license file
